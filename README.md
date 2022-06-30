@@ -22,9 +22,6 @@ python -m pip install pyasynchat
 Note that the [PyPi module](https://pypi.org/project/pyasynchat/) is named `pyasynchat` because creating modules with the same name as those provided by the standard library is not permitted.
 Usage is still via `import asynchat`.
 
-Note also that this module relies on `asyncore`, and so also includes that module.
-See [pyasyncore](https://pypi.org/project/pyasyncore/) if only `asyncore` is required.
-
 For guidance about using this module, see the [official documentation](https://docs.python.org/3/library/asynchat.html).
 
 

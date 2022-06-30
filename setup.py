@@ -6,7 +6,6 @@ import sys
 # standard library asynchat module that are different to the one provided here
 packages = []
 if sys.version_info[0] == 3 and sys.version_info[1] >= 12:
-    packages.append('asyncore')
     packages.append('asynchat')
 
 python_classifiers = ['Programming Language :: Python :: %s' % version for version in ['3.12']]
@@ -16,7 +15,7 @@ with open('README.md') as readme_file:
 
 setup(
     name='pyasynchat',
-    version='1.0.0',
+    version='1.0.1',
     description='Make asynchat available for Python 3.12 onwards',
     long_description=readme,
     long_description_content_type='text/markdown',
@@ -25,6 +24,7 @@ setup(
     url='https://github.com/simonrob/pyasynchat',
 
     platforms='any',
+    install_requires=['pyasyncore'],
     packages=packages,
 
     license='Python Software Foundation License Version 2',
