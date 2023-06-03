@@ -15,7 +15,7 @@ with open('README.md') as readme_file:
 
 setup(
     name='pyasynchat',
-    version='1.0.1',
+    version='1.0.2',
     description='Make asynchat available for Python 3.12 onwards',
     long_description=readme,
     long_description_content_type='text/markdown',
